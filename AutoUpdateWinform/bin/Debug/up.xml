@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AutoUpdater>
+  <!--升级文件所在服务器端的网址 -->
+  <URLAddress url="http://192.168.198.113/vbroker/log/"/>
+  <UpdateInfo>
+    <!--升级文件的更新日期-->
+    <UpdateTime date="2017-07-07"/>
+    <!--升级文件的版本号-->
+    <Version num = "1.0.0.1"/>
+  </UpdateInfo>
+  <UpdateFileList>
+    <!--共有三个文件需升级-->
+    <UpdateFile FileName = "aa.txt"/>
+    <UpdateFile FileName = "VB40.rar"/>
+    <UpdateFile FileName = "VB4-1.CAB"/>
+  </UpdateFileList>
+  <RestartApp>
+    <!--允许重新启动应用程序-->
+    <ReStart Allow = "Yes"/>
+    <!--启动的应用程序名-->
+    <AppName Name = "TIMS.exe"/>
+  </RestartApp>
+</AutoUpdater>
+
+
