@@ -75,13 +75,27 @@ namespace AutoUpdateWinform
             //}
             byte[] bytes = new byte[1024];
             int realRead = 0;
-            using (FileStream fs = new FileStream(Application.StartupPath + "\\up.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(Application.StartupPath+"\\update\\update.xml", FileMode.OpenOrCreate))
             {
                 while ((realRead = responseStream.Read(bytes, 0, 1024)) != 0)
                 {
                     fs.Write(bytes, 0, realRead);
                 }
 
+            }
+            XmlDocument doc = new XmlDocument();
+            XmlReaderSettings xrs = new XmlReaderSettings();
+            xrs.IgnoreComments = true;
+            XmlReader reader = XmlReader.Create(Application.StartupPath + "\\update\\update.xml", xrs);
+            doc.Load(reader);
+          XmlNode node=    doc.SelectSingleNode("//UpdateFileList");
+            XmlNodeList nodeList = node.ChildNodes;
+            List<string> list = new List<string>();
+
+            foreach (var item in nodeList)
+            {
+                XmlElement xe = (XmlElement)item;
+                list.Add(xe.GetAttribute("FileName"));
             }
 
 
