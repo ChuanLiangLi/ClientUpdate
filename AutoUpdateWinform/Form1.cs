@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -57,11 +59,26 @@ namespace AutoUpdateWinform
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string thePreUpdateDate = GetTheLastUpdateTime(Application.StartupPath + "\\AutoUpdater.xml");
+            Thread.Sleep(3000);
+            string thePreUpdateDate = GetTheLastUpdateTime(Application.StartupPath + "\\updateconfig.xml");
             string theLastsUpdateDate = "";
-            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("http://localhost:8081/config/AutoUpdater.xml");    //创建一个请求示例
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();　　//获取响应，即发送请求
-            Stream responseStream = response.GetResponseStream();
+            HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(@"http://localhost:8080/config/updateconfig.xml");//   //创建一个请求示例
+           
+                HttpWebResponse response = (HttpWebResponse)request.GetResponse();  //获取响应，即发送请求
+                Stream responseStream = response.GetResponseStream();
+                byte[] bytes = new byte[1024];
+                int realRead = 0;
+                using (FileStream fs = new FileStream(Application.StartupPath + "\\update\\updateconfig.xml", FileMode.OpenOrCreate))
+                {
+                    while ((realRead = responseStream.Read(bytes, 0, 1024)) != 0)
+                    {
+                        fs.Write(bytes, 0, realRead);
+                    }
+
+                }
+           
+            
+            
             //StreamReader streamReader = new StreamReader(responseStream, Encoding.UTF8);
             //XmlTextReader xml = new XmlTextReader(responseStream);
             //while (xml.Read())
@@ -73,22 +90,13 @@ namespace AutoUpdateWinform
             //        break;
             //    }
             //}
-            byte[] bytes = new byte[1024];
-            int realRead = 0;
-            using (FileStream fs = new FileStream(Application.StartupPath+"\\update\\update.xml", FileMode.OpenOrCreate))
-            {
-                while ((realRead = responseStream.Read(bytes, 0, 1024)) != 0)
-                {
-                    fs.Write(bytes, 0, realRead);
-                }
-
-            }
+          
             XmlDocument doc = new XmlDocument();
             XmlReaderSettings xrs = new XmlReaderSettings();
             xrs.IgnoreComments = true;
-            XmlReader reader = XmlReader.Create(Application.StartupPath + "\\update\\update.xml", xrs);
+            XmlReader reader = XmlReader.Create(Application.StartupPath + "\\update\\updateconfig.xml", xrs);
             doc.Load(reader);
-          XmlNode node=    doc.SelectSingleNode("//UpdateFileList");
+           XmlNode node=    doc.SelectSingleNode("//UpdateFileList");
             XmlNodeList nodeList = node.ChildNodes;
             List<string> list = new List<string>();
 
@@ -97,28 +105,52 @@ namespace AutoUpdateWinform
                 XmlElement xe = (XmlElement)item;
                 list.Add(xe.GetAttribute("FileName"));
             }
-
-
-            if (thePreUpdateDate != "")
+            //开始下载文件http://localhost:8080/IMG20170804135929565.jpg
+            foreach (string  fileName in list)
             {
-                //如果客户端将升级的应用程序的更新日期大于服务器端升级的应用程序的更新日期 
-                if (Convert.ToDateTime(thePreUpdateDate) >= Convert.ToDateTime(theLastsUpdateDate))
+                HttpWebRequest httpWebReq = (HttpWebRequest)HttpWebRequest.Create("http://localhost:8080/"+fileName);
+                
+                HttpWebResponse httpResponse = (HttpWebResponse)httpWebReq.GetResponse();  //获取响应，即发送请求
+                Stream resStream = httpResponse.GetResponseStream();
+                using (FileStream fs = new FileStream(Application.StartupPath + "\\update\\"+fileName, FileMode.OpenOrCreate))
                 {
-                    MessageBox.Show("当前软件已经是最新的，无需更新！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
+                    while ((realRead = resStream.Read(bytes, 0, 1024)) != 0)
+                    {
+                        fs.Write(bytes, 0, realRead);
+                    }
+
                 }
             }
-            this.labDownFile.Text = "下载更新文件";
-            this.labFileName.Refresh();
-            this.btnCancel.Enabled = true;
+            
+                //将文件拷贝到对应的文件目录中
+                string basePath = Application.StartupPath;
+                foreach (string fileName in list)
+                {
+                    File.Copy(basePath + "\\update\\" + fileName, basePath + "\\" + fileName,true);
+                }
+            Process.Start(Path.Combine(Application.StartupPath, "ClientTest.exe"), "121");
+            Application.Exit();
+
+            /* if (thePreUpdateDate != "")
+             {
+                 //如果客户端将升级的应用程序的更新日期大于服务器端升级的应用程序的更新日期 
+                 if (Convert.ToDateTime(thePreUpdateDate) >= Convert.ToDateTime(theLastsUpdateDate))
+                 {
+                     MessageBox.Show("当前软件已经是最新的，无需更新！", "系统提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                     this.Close();
+                 }
+             }*/
+            // this.labDownFile.Text = "下载更新文件";
+            // this.labFileName.Refresh();
+            // this.btnCancel.Enabled = true;
             //this.progressBar. = 0;
-           /// this.progressBarTotal.Position = 0;
-           // this.progressBarTotal.Refresh();
-            this.progressBar.Refresh();
+            /// this.progressBarTotal.Position = 0;
+            // this.progressBarTotal.Refresh();
+            //  this.progressBar.Refresh();
             //通过动态数组获取下载文件的列表 
-           // ArrayList List = GetDownFileList(GetTheUpdateURL(), theFolder.FullName);
-          //  string[] urls = new string[List.Count];
-           // List.CopyTo(urls, 0);
+            // ArrayList List = GetDownFileList(GetTheUpdateURL(), theFolder.FullName);
+            //  string[] urls = new string[List.Count];
+            // List.CopyTo(urls, 0);
         }
 
         public void DownloadFile(string URL, string filename, System.Windows.Forms.ProgressBar prog, System.Windows.Forms.Label label1)

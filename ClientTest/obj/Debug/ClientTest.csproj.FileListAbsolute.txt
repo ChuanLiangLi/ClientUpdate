@@ -1,0 +1,8 @@
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\bin\Debug\ClientTest.exe.config
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\bin\Debug\ClientTest.exe
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\bin\Debug\ClientTest.pdb
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.Form1.resources
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.Properties.Resources.resources
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.csproj.GenerateResource.Cache
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.exe
+F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.pdb

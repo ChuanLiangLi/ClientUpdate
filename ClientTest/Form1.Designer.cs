@@ -1,4 +1,4 @@
-﻿namespace AutoUpdateWinform
+﻿namespace ClientTest
 {
     partial class Form1
     {
@@ -34,17 +34,17 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 90);
+            this.label1.Location = new System.Drawing.Point(202, 129);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 15);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "程序正在更新，，请稍后";
+            this.label1.Text = "这是客户端";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(537, 159);
+            this.ClientSize = new System.Drawing.Size(487, 309);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
