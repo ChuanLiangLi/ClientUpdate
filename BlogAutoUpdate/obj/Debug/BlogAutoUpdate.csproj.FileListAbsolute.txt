@@ -1,0 +1,9 @@
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.DownloadConfirm.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.DownloadProgress.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.Properties.Resources.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.csproj.GenerateResource.Cache
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\bin\Debug\BlogAutoUpdate.exe.config
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\bin\Debug\BlogAutoUpdate.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\bin\Debug\BlogAutoUpdate.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\BlogAutoUpdate\obj\Debug\BlogAutoUpdate.pdb

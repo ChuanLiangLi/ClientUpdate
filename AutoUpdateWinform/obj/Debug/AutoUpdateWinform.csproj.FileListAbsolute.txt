@@ -15,3 +15,11 @@ F:\visual studio 2013\Projects\ClientUpdate\AutoUpdateWinform\bin\Debug\AutoUpda
 F:\visual studio 2013\Projects\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.Form1.resources
 F:\visual studio 2013\Projects\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.Properties.Resources.resources
 F:\visual studio 2013\Projects\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.csproj.GenerateResource.Cache
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\bin\Debug\AutoUpdateWinform.exe.config
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\bin\Debug\AutoUpdateWinform.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\bin\Debug\AutoUpdateWinform.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.Form1.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.Properties.Resources.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\AutoUpdateWinform\obj\Debug\AutoUpdateWinform.csproj.GenerateResource.Cache

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <AutoUpdater>
   <!--升级文件所在服务器端的网址 -->
-  <URLAddress url="http://localhost:8080/config/"/>
+  <URLAddress url="http://192.168.198.11/vbroker/log/"/>
   <UpdateInfo>
     <!--升级文件的更新日期-->
-    <UpdateTime date="2005-02-02"/>
+    <UpdateTime date="2017-03-21"/>
     <!--升级文件的版本号-->
     <Version num = "1.0.0.1"/>
   </UpdateInfo>
   <UpdateFileList>
     <!--共有三个文件需升级-->
+    <UpdateFile FileName = "IMG20170804135929565.jpg"/>
     <UpdateFile FileName = "ClientTest.exe"/>
-	<UpdateFile FileName="IMG20170804135929565.jpg"/>
   </UpdateFileList>
   <RestartApp>
     <!--允许重新启动应用程序-->

@@ -6,3 +6,11 @@ F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.Prop
 F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.csproj.GenerateResource.Cache
 F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.exe
 F:\visual studio 2013\Projects\ClientUpdate\ClientTest\obj\Debug\ClientTest.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\bin\Debug\ClientTest.exe.config
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\bin\Debug\ClientTest.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\bin\Debug\ClientTest.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\obj\Debug\ClientTest.Properties.Resources.resources
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\obj\Debug\ClientTest.csproj.GenerateResource.Cache
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\obj\Debug\ClientTest.exe
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\obj\Debug\ClientTest.pdb
+F:\vs\projects\客户端升级\AutoUpdateWinform\ClientUpdate\ClientTest\obj\Debug\ClientTest.FrmClient.resources
