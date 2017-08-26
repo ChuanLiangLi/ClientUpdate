@@ -1,0 +1,9 @@
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\bin\Debug\winformSecond.exe.config
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\bin\Debug\winformSecond.exe
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\bin\Debug\winformSecond.pdb
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.csprojResolveAssemblyReference.cache
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.Form1.resources
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.Properties.Resources.resources
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.csproj.GenerateResource.Cache
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.exe
+F:\vs\projects\客户端升级\ProgressBarTest\winformSecond\obj\Debug\winformSecond.pdb

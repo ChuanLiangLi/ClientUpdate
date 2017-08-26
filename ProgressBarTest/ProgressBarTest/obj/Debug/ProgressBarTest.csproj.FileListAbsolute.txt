@@ -1,0 +1,9 @@
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\bin\Debug\ProgressBarTest.exe.config
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\bin\Debug\ProgressBarTest.exe
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\bin\Debug\ProgressBarTest.pdb
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.csprojResolveAssemblyReference.cache
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.Form1.resources
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.Properties.Resources.resources
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.csproj.GenerateResource.Cache
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.exe
+F:\vs\projects\客户端升级\ProgressBarTest\ProgressBarTest\obj\Debug\ProgressBarTest.pdb
