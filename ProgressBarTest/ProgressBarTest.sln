@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBarTestSecond", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformFirst", "winformFirst\winformFirst.csproj", "{C1C04EDD-DC2E-4B8A-A7D9-95C1C6CFC590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformSecond", "winformSecond\winformSecond.csproj", "{2CD4E5F6-C92B-477C-B844-B3CBCAFF3B53}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformFirst1", "winformSecond\winformFirst1.csproj", "{2CD4E5F6-C92B-477C-B844-B3CBCAFF3B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winformSecond2", "winformSecond2\winformSecond2.csproj", "{A59BA17E-1844-4291-B228-3316F53BB096}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2CD4E5F6-C92B-477C-B844-B3CBCAFF3B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CD4E5F6-C92B-477C-B844-B3CBCAFF3B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CD4E5F6-C92B-477C-B844-B3CBCAFF3B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59BA17E-1844-4291-B228-3316F53BB096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59BA17E-1844-4291-B228-3316F53BB096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59BA17E-1844-4291-B228-3316F53BB096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59BA17E-1844-4291-B228-3316F53BB096}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

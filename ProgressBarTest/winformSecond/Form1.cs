@@ -32,7 +32,8 @@ namespace winformSecond
             {
                 progressBar1.Value = s;
                 progressBar1.Maximum = n;
-
+                this.textBox1.AppendText(s.ToString()+"\r\n");
+                label1.Text = s.ToString()+"/100";
             }
         }
         public delegate void Mydelete(int n,int s);
