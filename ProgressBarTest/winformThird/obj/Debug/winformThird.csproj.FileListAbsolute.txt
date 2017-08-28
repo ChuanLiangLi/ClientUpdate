@@ -1,0 +1,10 @@
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\bin\Debug\winformThird.exe.config
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\bin\Debug\winformThird.exe
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\bin\Debug\winformThird.pdb
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.csprojResolveAssemblyReference.cache
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.Form1.resources
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.ProcessForm.resources
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.Properties.Resources.resources
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.csproj.GenerateResource.Cache
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.exe
+F:\visual studio 2013\Projects\ClientUpdate\ProgressBarTest\winformThird\obj\Debug\winformThird.pdb
